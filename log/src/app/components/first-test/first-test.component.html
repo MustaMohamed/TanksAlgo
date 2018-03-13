@@ -1,0 +1,21 @@
+<div class='login-container center center-h center-v'>
+  
+  <h1>{{formTitle}}</h1>
+  
+  <div class="input-container container center center-h">
+    <input class="user-input" (keyup)="handleInput($event)" placeholder="User E-mail" type="email" name="userEmail">
+    <input class="pass-input" (keyup)="handleInput($event)" placeholder="User Password" type="password" name="userPassword">
+  </div>
+
+  <div class="actions container center center-h">
+    <button name="login" (click)="getAction($event)">Login</button>
+    <button name="register" (click)="getAction($event)">Register</button>
+  </div>
+
+  <div class="result container center center-h">
+    <div *ngIf="actionFired" class="message" [class.success]="!actionResult" [class.failed]="actionResult">
+      <h6 class="center-v">{{DBMessage}}</h6>
+    </div>
+  </div>
+
+</div>

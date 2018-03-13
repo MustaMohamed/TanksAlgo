@@ -1,0 +1,83 @@
+.login-container {
+    height: 80vh;
+    width: 40%;
+    background: rgba(24, 23, 23, 0.7);
+    position: absolute;
+}
+.center {
+    margin: auto;    
+}
+.center-h {
+    left: 0;
+    right: 0;
+}
+
+.center-v {
+    top: 0px;
+    bottom: 0;
+}
+
+.container {
+    width: 80%;
+}
+
+
+.input-container input {
+    display: block;
+    width: 98%;
+    height: 50px;
+    margin: 10% 0;
+    background-color:rgba(0, 0, 0, 0.7);
+    outline: none;
+    border: #74b9ff solid 1px;
+    color: #fff;
+    font-size: 25px;
+    padding-left: 2%;
+}
+
+.input-container input:focus {
+    /* border: #00b894 solid 1px; */
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    /* padding: 3px 0px 3px 3px; */
+    /* margin: 5px 1px 3px 0px; */
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+
+.actions button {
+    background-color: #0984e3; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor:pointer;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+}
+
+.result .message {
+    border: solid 3px;
+    border-radius: 8px;
+    height: 8vh;
+    border-color: red;
+    width: 100%;
+}
+
+.message h6 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.result .success {
+    border-color: #d63031;
+    background-color: #ff7675;
+}
+
+.result .failed {
+    border-color: #00b894;
+    background-color: #05c46b;
+}
